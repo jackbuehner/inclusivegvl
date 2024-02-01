@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="../_app/immutable/assets/3.6fba6342.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.1f3857be.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.a412805e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.c02aff5a.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.b61304ef.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control.c2cf8273.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.e092abaa.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.b386f462.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.96816013.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/3.061dbeef.js"><title>Human Measures</title><!-- HEAD_svelte-8oibt4_START --><!-- HEAD_svelte-8oibt4_END -->
+	</head>
+	<style>
+		body {
+			font-family: Verdana, Geneva, sans-serif;
+			font-size: 12px;
+		}
+	</style>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">   <div class="row svelte-1huo2zd"><div class="column left svelte-1huo2zd"><div class="title svelte-1huo2zd">Human Measures</div></div> <div class="column middle svelte-1huo2zd" data-svelte-h="svelte-1xo1bro"><div id="leftMapTitle"></div></div> <div class="column right svelte-1huo2zd" data-svelte-h="svelte-1sdxwc2"><div id="rightMapTitle"></div></div></div> <div class="row svelte-1huo2zd"><div class="column left svelte-1huo2zd"><div class="legend svelte-1huo2zd"><div class="link svelte-1huo2zd" data-svelte-h="svelte-qaamc1"><a href="/inclusivegvl/" rel="external">← Home</a></div> <div class="link svelte-1huo2zd" data-svelte-h="svelte-ilw1r5"><a href="/inclusivegvl/indicator_descriptions.pdf" rel="external">Indicator Descriptions</a></div> <form><fieldset class="svelte-fer2ly"><div class="selectIndicator svelte-fer2ly"><legend data-svelte-h="svelte-1uu70p1">Select Indicator</legend> <select id="indicatorNames" style="width: 80%"><option value="afram_">African American</option><option value="age4_">Age 0-4</option><option value="age17_">Age 5-17</option><option value="age64_">Age 18-64</option><option value="asian">Asian</option><option value="chldpt">Child Ratio</option><option value="depidx">Dependency Index</option><option value="dividx">Diversity Index</option><option value="fhh">Female-Headed Family Households</option><option value="latino">Latino or Hispanic</option><option value="educ">Less Than High School</option><option value="min04_">Minor Population (0-4)</option><option value="minperc">Minor Population (0-17)</option><option value="nonwh">Non-White</option><option value="presch">Preschool</option><option value="popden">Population Density</option><option value="white">White</option></select></div> <fieldset class="svelte-fer2ly"><legend data-svelte-h="svelte-pllrj3">Select a year for:</legend> <div class="leftMap svelte-fer2ly"><legend data-svelte-h="svelte-1nfesnv">Left Map</legend> <input type="radio" id="L1990" value="1990"> <label for="L1990" data-svelte-h="svelte-c6xogq">1990</label> <input type="radio" id="L2000" value="2000"> <label for="L2000" data-svelte-h="svelte-1xk3myu">2000</label><br> <input type="radio" id="L2010" value="2010"> <label for="L2010" data-svelte-h="svelte-xvk656">2010</label> <input type="radio" id="L2016" value="2016"> <label for="L2016" data-svelte-h="svelte-1fxjyiu">2016</label></div></fieldset> <fieldset class="svelte-fer2ly"><div class="rightMap svelte-fer2ly"><legend data-svelte-h="svelte-10qic6e">Right map</legend> <input type="radio" id="R1990" value="1990"> <label for="R1990" data-svelte-h="svelte-1edp2bg">1990</label> <input type="radio" id="R2000" value="2000"> <label for="R2000" data-svelte-h="svelte-1yhrczk">2000</label><br> <input type="radio" id="R2010" value="2010"> <label for="R2010" data-svelte-h="svelte-117i0s">2010</label> <input type="radio" id="R2016" value="2016"> <label for="R2016" data-svelte-h="svelte-1gv7ojk">2016</label></div></fieldset> <div class="subButton svelte-fer2ly"><button type="button" data-svelte-h="svelte-9lsu3k">Compare</button></div> <div class="clearButton"><button type="button" id="clear" data-svelte-h="svelte-u2r7sf">Clear Maps</button></div></fieldset> </form> <div class="swatches svelte-86ob8x"> </div></div></div> <div class="column middle svelte-1huo2zd"><div class="maps svelte-1huo2zd"><div style="height: 600px;"></div></div></div> <div class="column right svelte-1huo2zd"><div class="maps svelte-1huo2zd"><div style="height: 600px;"></div></div></div></div> <div id="chartContainer" class="svelte-1huo2zd"></div> 
+			
+			<script>
+				{
+					__sveltekit_m6r4rf = {
+						assets: "/inclusivegvl",
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.1f3857be.js"),
+						import("../_app/immutable/entry/app.e092abaa.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
